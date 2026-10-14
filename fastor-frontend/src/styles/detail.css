@@ -1,0 +1,21 @@
+.detail-page { padding-bottom: 14px; }
+.detail-back { position: absolute; top: 4px; left: 16px; z-index: 2; background: rgba(255,255,255,.85); border-radius: 50%; width: 32px; height: 32px; display: grid; place-items: center; }
+.detail-back button { margin-top: 0 !important; }
+.detail-img { margin-top: 22px; width: 100%; aspect-ratio: 215 / 148; border-radius: 28px; font-size: 64px; }
+.price-row { margin-top: 10px; display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+.detail-price { font-size: 16px; font-weight: 800; color: var(--orange-dark); }
+.stepper { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.stepper button { width: 18px; height: 18px; border-radius: 50%; background: var(--orange-dark); color: #fff; font-size: 14px; line-height: 16px; display: grid; place-items: center; }
+.stepper span { min-width: 12px; text-align: center; font-weight: 600; }
+.detail-heading { margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--ink-heading); }
+.detail-desc { margin-top: 4px; font-size: 9px; line-height: 12px; color: #444; }
+.portion-title { margin-top: 24px; font-size: 12px; font-weight: 700; color: var(--ink-heading); }
+.portion-list { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+.portion-row { display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; }
+.portion-label { font-size: 9px; color: #555; white-space: nowrap; }
+.portion-line { flex: 1; border-bottom: 1px solid #f0d6c8; height: 1px; }
+.portion-price { font-size: 8px; color: #555; }
+.radio { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--orange-dark); background: radial-gradient(circle, #fff 0 38%, transparent 40%); }
+.radio--on { background: radial-gradient(circle, var(--orange-dark) 0 42%, transparent 45%); }
+.detail-bottom { margin-top: auto; padding-top: 20px; }
+.home-indicator { width: 134px; height: 4px; border-radius: 3px; background: #111; margin: 14px auto 0; }

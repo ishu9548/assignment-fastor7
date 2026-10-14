@@ -1,0 +1,123 @@
+:root {
+  --orange: #ff5a00;
+  --orange-text: #f26a21;
+  --orange-soft: #ffe3d6;
+  --orange-dark: #e8501a;
+  --ink: #1b1b1b;
+  --ink-heading: #2a1a14;
+  --muted: #7d7d7d;
+  --line: #e6e6e6;
+  --field: #f3f3f3;
+  --page-bg: #ffffff;
+  --font: "Mulish", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  -webkit-tap-highlight-color: transparent; 
+  user-select: none;
+}
+
+html, body, #root { 
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+}
+
+body { 
+  font-family: var(--font); 
+  color: var(--ink); 
+  background: #121212; /* Rich dark native background on desktop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button { font-family: inherit; cursor: pointer; border: 0; background: none; }
+input { font-family: inherit; }
+
+/* Phone Frame Shell - Enforces strict mobile app appearance on desktop & web */
+.phone-frame { 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.phone-screen { 
+  width: 100%; 
+  max-width: 414px; /* Standard mobile width */
+  height: 100%; 
+  max-height: 896px; /* Standard mobile height */
+  background: var(--page-bg); 
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+  .phone-screen { 
+    border-radius: 40px; /* Smooth native phone corner styling */
+    border: 8px solid #2c2c2c; /* Realistic device border bezel */
+  }
+}
+
+.page { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 0 20px; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.page::-webkit-scrollbar { display: none; }
+
+.btn-primary {
+  width: 100%; 
+  height: 48px; 
+  border-radius: 8px; 
+  background: var(--orange); 
+  color: #fff;
+  font-size: 15px; 
+  font-weight: 600; 
+  letter-spacing: .6px; 
+  transition: opacity .15s, transform .05s;
+}
+.btn-primary:active { transform: scale(.98); }
+.btn-primary:disabled { opacity: .55; cursor: not-allowed; }
+
+.error-text { color: #d93025; font-size: 12px; margin-top: 8px; min-height: 16px; }
+
+.toast {
+  position: absolute; 
+  left: 20px; 
+  right: 20px; 
+  bottom: 30px; 
+  background: #222; 
+  color: #fff;
+  padding: 12px 16px; 
+  border-radius: 8px; 
+  font-size: 13px; 
+  text-align: center; 
+  z-index: 10;
+}
+
+.spinner { 
+  width: 28px; 
+  height: 28px; 
+  border: 3px solid var(--orange-soft); 
+  border-top-color: var(--orange); 
+  border-radius: 50%; 
+  animation: spin .8s linear infinite; 
+  margin: 40px auto; 
+}
+
+@keyframes spin { 
+  to { transform: rotate(360deg); } 
+}

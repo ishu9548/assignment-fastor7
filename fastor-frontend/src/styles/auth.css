@@ -1,0 +1,31 @@
+.auth-page { padding-bottom: 20px; }
+.auth-title { font-size: 18px; font-weight: 700; color: #222; letter-spacing: .1px; }
+.auth-sub { margin-top: 10px; font-size: 11px; line-height: 16px; color: #777; max-width: 280px; }
+.sent-to { color: #222; font-weight: 700; font-size: 11px; }
+
+.phone-field {
+  margin-top: 54px; display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 14px;
+  background: var(--field); border: 1px solid var(--line); border-radius: 6px; font-size: 12px;
+}
+.phone-field:focus-within { border-color: var(--orange); }
+.phone-code { font-weight: 700; color: #222; }
+.phone-divider { width: 1px; height: 14px; background: #bbb; margin-right: 18px; }
+.phone-dash { color: #777; }
+.phone-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font-size: 12px; color: #222; letter-spacing: 1px; }
+.phone-field input::placeholder { color: #aaa; }
+
+.otp-row { margin-top: 30px; display: flex; align-items: center; gap: 8px; }
+.otp-box {
+  width: 25px; flex: 0 0 25px; height: 32px; text-align: center; font-size: 14px; font-weight: 700;
+  border: 1px solid var(--line); border-radius: 3px; outline: 0; background: #fff; color: #222; padding: 0;
+}
+@media (min-width: 340px) { .otp-box { width: 27px; flex-basis: 27px; height: 32px; } }
+.otp-box:focus { border-color: var(--orange); }
+.otp-dash { color: #888; margin: 0 4px; font-size: 12px; }
+.resend { margin-top: 14px; font-size: 10px; color: #333; }
+.resend-timer { color: var(--orange-text); }
+.resend-link { color: var(--orange-text); font-size: 10px; font-weight: 700; text-decoration: underline; }
+
+.auth-bottom { margin-top: auto; padding-top: 24px; }
+.terms { margin-top: 10px; text-align: center; font-size: 8px; color: #666; }
+.terms b { color: #222; font-weight: 700; }
